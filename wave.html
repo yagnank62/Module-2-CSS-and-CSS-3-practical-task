@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Wave layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://img.freepik.com/free-photo/top-view-desktop-with-agenda-glasses_23-2148430842.jpg?w=1060&t=st=1690870535~exp=1690871135~hmac=0530fd52ac4b64ceff28622346065752ee79edb8e23426f668e5c1f6b53e3429);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            
+        }
+        .main .info{
+           width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          /* align-content: center; */
+        
+        }
+        .main h1{
+            color: white;
+            letter-spacing: 3px;
+            font-size: 22px;
+        
+
+        }
+        .main p{
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .main svg{
+            position: fixed;
+            bottom: 0;
+            
+        } 
+        .main .btn{
+            width: 65px;
+            height: 65px;
+            background-color: lightgray;
+            border:  1px solid red;
+            border-radius: 100%;
+            transition: all 2s linear;
+        }
+        /* .main .btn:hover{
+            width: 40px;
+            height: 40px;
+        } */
+        .main .btn img{
+            width: 100%;
+            height: inherit;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+        .main .btn1{
+            position: absolute;
+            bottom: 17%;
+            left: 20%;
+            z-index: 1;
+        }
+        .main .btn2{
+            position: absolute;
+            bottom: 13%;
+            left: 35%;
+            z-index: 1;
+        }
+        .main .btn3{
+            position: absolute;
+            bottom: 7%;
+            left: 47%;
+            z-index: 1;
+        }
+        .main .btn4{
+            position: absolute;
+            bottom: 2%;
+            left: 63%;
+            z-index: 1;
+        }
+        .main .btn5{
+            position: absolute;
+            bottom: 8%;
+            left: 80%;
+            z-index: 1;
+        }
+        .main .btn:hover .box{
+            display: block;
+        }
+        .main .info img{
+            width: 100%;
+            height: inherit;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="info">
+            <h1> OUR TEAM </h1>
+            <p> Meet the creziest team, share your thoughts with them. </p>
+            <img src="https://o.remove.bg/downloads/9cc7e10a-df51-448a-b298-64caf03027c4/border-removebg-preview.png" alt="" width="180">
+        </div>
+        <div class="btn btn1">
+            <div class="box"> </div>
+            <img src="https://img.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg?size=626&ext=jpg&ga=GA1.2.1295281416.1650046850&semt=sph" alt="">
+        </div>
+        <div class="btn btn2">
+            <div class="box"> </div>
+            <img src="https://img.freepik.com/premium-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.1295281416.1650046850&semt=sph" alt="">
+        </div>
+        <div class="btn btn3">
+            <div class="box"> </div>
+            <img src="https://img.freepik.com/free-photo/handsome-bearded-guy-posing-against-white-wall_273609-20597.jpg?size=626&ext=jpg&ga=GA1.2.1295281416.1650046850&semt=sph" alt="">
+        </div>
+        <div class="btn btn4">
+            <div class="box"> </div>
+            <img src="https://img.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg?size=626&ext=jpg&ga=GA1.2.1295281416.1650046850&semt=sph" alt="">
+        </div>
+        <div class="btn btn5">
+            <div class="box"> </div>
+            <img src="https://img.freepik.com/free-photo/young-woman-with-round-glasses-yellow-sweater_273609-7091.jpg?size=626&ext=jpg&ga=GA1.2.1295281416.1650046850&semt=sph" alt="">
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff5500" fill-opacity="0.5" d="M0,160L60,144C120,128,240,96,360,106.7C480,117,600,171,720,208C840,245,960,267,1080,234.7C1200,203,1320,117,1380,74.7L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+        
+        </svg>
+    </div>
+</body>
+</html>
