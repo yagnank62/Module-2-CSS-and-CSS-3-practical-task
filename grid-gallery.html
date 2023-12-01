@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 95%;
+            margin: 0 auto;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+        }
+        .main .left{
+            width: 80%;
+            overflow: hidden;
+        }
+        .main .right{
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            padding:20px 20px 0px 0px;
+            width: 20%;
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main .right h2{
+            font-size: 24px;
+        }
+        .main .right .icon{
+            padding-top: 20px;
+        }
+        .main .right .icon i{
+            padding: 0px 0 0 20px;
+        }
+        .main .right a{
+            color: white;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 10px;
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+        .box{
+            height: 250px;
+            background-color: antiquewhite;
+        }
+        .row1{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 65% 35%;
+        }
+        .row2{
+            margin-top: 15px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 20% 60% 20%;
+        }
+        .row3{
+            margin-top: 15px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 50% 50%;
+        }
+        .row4{
+            margin-top: 15px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .bx1{
+            background-color: aqua;
+            background: url(https://img.freepik.com/free-photo/happy-young-man-swimming-surfboard-ocean_1262-19166.jpg?w=996&t=st=1700210955~exp=1700211555~hmac=e41c8282690e8b30022f3ddf9d31705183cbd3cd5de01a44867041e4639f5b6e);
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+        .bx2{
+            margin-left: 10px;
+            background-color: maroon;
+            background: url(https://img.freepik.com/free-photo/majestic-mountain-peak-panoramic-sunset-snow-capped-range-beauty-nature-generated-by-artificial-intelligence_24640-131064.jpg?t=st=1700211027~exp=1700214627~hmac=72b4897799ffbe92288aeb33e11f4de752dc20864535d9151318c0bea5978782&w=1060);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .bx3{
+            background-color: lightcoral;
+            background: url(https://img.freepik.com/free-photo/woman-stands-front-building-wearing-blue-top-black-top_1340-45320.jpg?t=st=1700211154~exp=1700214754~hmac=d96a8060a210fd60af6cdbdf0f6805d5758fb531c082daee4e0694f60cc37a3a&w=996);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+        }
+        .bx4{
+            background-color: lightseagreen;
+            background: url(https://img.freepik.com/free-photo/landscape-with-green-grass-field-lone-tree-amazing-rainbow-ai-generated-image_511042-1655.jpg?t=st=1700211371~exp=1700214971~hmac=85b3d11b2f3a98a6e18311c41f0ab478c868b683ad7f100cb044782d9214b7eb&w=1380);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .bx5{
+            background-color: lightgreen;
+            background: url(https://img.freepik.com/free-photo/medium-shot-friends-celebrating-new-year_23-2150725380.jpg?t=st=1700211419~exp=1700215019~hmac=e87804ffa8c2db2ef246cba9fa002e855b4ad9df2516ff165491c3daff003d30&w=996);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bx6{
+            background-color: lightsalmon;
+            background: url(https://images.hdqwalls.com/wallpapers/coast-ocean-scenery-tree-ud.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .bx7{
+            background-color: slateblue;
+            background: url(https://images.hdqwalls.com/wallpapers/sailboat-fa.jpg);
+            background-position: left top;
+            background-repeat: no-repeat;
+        }
+        .bx8{
+            background-color: steelblue;
+            background: url(https://images.hdqwalls.com/wallpapers/mexico-secluded-sandy-beaches-5k-2x.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .bx9{
+            background-color: burlywood;
+            background: url(https://images.hdqwalls.com/wallpapers/dawn-at-kairakau-beach-g5.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .bx10{
+            background-color: cornflowerblue;
+            background: url(https://images.hdqwalls.com/wallpapers/beach-sea-dawn-dusk-landscape-ocean-rocks-sunlight-94.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .right .active{
+            color: orangered !important;
+        }
+        @media screen and (max-width:960px) {
+            .main{
+                flex-direction: column;
+            }
+            .main .left{
+                width: 100%;
+            }
+            .main .right{
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
+            }
+            .main .right a{
+                padding: 0px 10px;
+            }
+            .main .right .icon{
+                padding: 0;
+            }
+            .row1{
+                grid-template-columns: 1fr;
+            }
+            .row2{
+                grid-template-columns: 1fr;
+            }
+            .row3{
+                grid-template-columns: 1fr;
+            }
+            .row4{
+                grid-template-columns: 1fr;
+            }
+        }
+        @media screen and (max-width:640px) {
+            .main .right{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- main start  -->
+    <div class="main">
+        <!-- left start -->
+        <div class="left">
+            <div class="row1">
+                <div class="box bx1"></div>
+                <div class="box bx2"></div>
+            </div>
+            <div class="row2">
+                <div class="box bx3"></div>
+                <div class="box bx4"></div>
+                <div class="box bx5"></div>
+            </div>
+            <div class="row3">
+                <div class="box bx6"></div>
+                <div class="box bx7"></div>
+            </div>
+            <div class="row4">
+                <div class="box bx8"></div>
+                <div class="box bx9"></div>
+                <div class="box bx10"></div>
+            </div>
+        </div>
+        <!-- left end -->
+
+        <!-- right start  -->
+        <div class="right">
+            <h2>SHUTTER</h2>
+            <a href="" class="active">home</a>
+            <a href="">photos</a>
+            <a href="">bio</a>
+            <a href="">blog</a>
+            <a href="">contact</a>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <!-- right end  -->
+    </div>
+    <!-- main end  -->
+</body>
+</html>

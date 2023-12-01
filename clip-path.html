@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>just check </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .main .cont p {
+            word-spacing: 5px;
+        }
+
+        .main .cont {
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+            color: white;
+            /* text-transform: uppercase; */
+            /* line-height: 25px; */
+        }
+
+        .main .bx {
+            text-align: center;
+            width: 100%;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://c4.wallpaperflare.com/wallpaper/70/309/249/hot-air-balloons-landscape-nature-mountains-wallpaper-preview.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            clip-path: polygon(50% 100%, 100% 81%, 100% 0, 0 0, 0 75%);
+            position: absolute;
+        }
+
+        .cl {
+            position: absolute;
+            /* height: 50px;
+            width: 50px; */
+            padding: 10px;
+            width: fit-content;
+            background-color: black;
+            border-radius: 100%;
+            left: 0;
+            right: 0;
+            bottom: -2%;
+            color: white;
+            /* z-index: 1; */
+            margin: 0 auto;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 0px;
+        }
+
+        header .logo {
+            align-items: center;
+            font-size: 22px;
+        }
+
+        header .logo p {
+            padding: 0 8px 0 0;
+            text-transform: uppercase;
+            overflow: hidden;
+            color: white;
+            border: 2px solid white;
+        }
+
+        header .logo p span {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            margin-right: 5px;
+        }
+
+        header nav a {
+            padding-left: 15px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        /* header end  */
+
+        .client {
+            position: relative;
+            margin: 5% 0 0 0;
+            display: flex;
+            flex-direction: column;
+            padding: 5% 0px;
+        }
+
+        .client h1 {
+            font-size: 45px;
+            letter-spacing: 10px !important;
+            margin: 10px 0px;
+            text-decoration: underline solid orangered;
+            text-underline-offset: 20px;
+        }
+
+        .client .btn {
+            margin-top: 30px;
+        }
+
+        .client .btn a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            background-color: transparent;
+            border: 1px solid white;
+            padding: 10px 30px;
+        }
+
+        .client p {
+            margin: 30px 0px;
+            padding: 0 45px;
+        }
+
+        .client .btn .bg {
+            background-color: orangered;
+            margin-right: 20px;
+        }
+
+        #left {
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            font-size: 25px;
+        }
+
+        #right {
+            position: absolute;
+            right: 0%;
+            font-size: 25px;
+            top: 50%;
+            color: orangered;
+        }
+
+        #icon{
+            width: 95%;
+            margin: 0 auto;
+            padding: 8% 0%;
+        }
+        .icon-main {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            /* padding: 0 30px; */
+        }
+
+        .icon-main .rotate{
+            transform: rotate(125deg);
+        }
+        .icon-main .icon-card {
+            width: 24%;
+            text-align: center;
+        }
+
+        .icon-main .icon-card i {
+            padding: 25px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .icon-main .icon-card h3 {
+            margin: 10px 0px;
+            text-transform: capitalize;
+            text-decoration: underline solid red;
+            text-underline-offset: 10px;
+        }
+
+        .icon-main .icon-card p {
+            margin: 15px 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="cont">
+            <!-- header start -->
+            <header>
+                <div class="logo">
+                    <p><span>l</span>ogo</p>
+                </div>
+                <nav>
+                    <a href="">home</a>
+                    <a href="">home</a>
+                    <a href="">home</a>
+                    <a href="">home</a>
+                    <a href="">home</a>
+                    <a href="">home</a>
+                    <a href="">home</a>
+                </nav>
+            </header>
+            <!-- header end  -->
+            <div class="client">
+                <strong>Our Clients Are Our Frist Priority</strong>
+                <h1>WELCOME TO SKY</h1>
+                <center>
+                    <img src="" alt="">
+                </center>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, odit facilis dolores magnam porro
+                    reiciendis distinctio veritatis modi aliquam magni velit harum quas eveniet possimus pariatur
+                    repellat eligendi quia, amet placeat culpa ea accusamus explicabo quidem ipsam! Adipisci voluptas
+                    tempore eos ipsum ducimus eligendi obcaecati.
+                </p>
+                <div class="btn">
+                    <a href="" class="bg">GET STARTED NOW</a>
+                    <a href="">LEARN MORE</a>
+                </div>
+                <i class="fa-solid fa-square-caret-left" id="left"></i>
+                <i class="fa-solid fa-square-caret-right" id="right"></i>
+            </div>
+
+
+
+        </div>
+        <div class="bx">
+        </div>
+        <!-- <div class="cl"></div> -->
+        <i class="fa-solid fa-arrow-down cl"></i>
+    </div>
+
+    <section id="icon">
+        <div class="icon-main">
+            <div class="icon-card">
+                <i class="fa-solid fa-infinity rotate"></i>
+                <h3>sleek design</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At neque est pariatur eum iure ipsam
+                    molestias perferendis officia eos quia.
+                </p>
+            </div>
+            <div class="icon-card">
+                <i class="fa-regular fa-heart"></i>
+                <h3>clean code</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At neque est pariatur eum iure ipsam
+                    molestias perferendis officia eos quia.
+                </p>
+            </div>
+            <div class="icon-card">
+                <i class="fa-regular fa-lightbulb"></i>
+                <h3>creative code</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At neque est pariatur eum iure ipsam
+                    molestias perferendis officia eos quia.
+                </p>
+            </div>
+            <div class="icon-card">
+                <i class="fa-regular fa-message"></i>
+                <h3>free support</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At neque est pariatur eum iure ipsam
+                    molestias perferendis officia eos quia.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

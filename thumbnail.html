@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS thumbnail Layout </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100%;
+            background-color: rgb(244, 235, 235);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 5% 1%;
+        }
+        
+        .main .box{
+            margin-top: 5%;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+        .main .box .up{
+            width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            font-size: 25px;
+        }
+        .main .box .down{
+            background-color: white;
+            padding: 20px;
+            font-size: 18px;
+        }
+        .main .box .down .btn{
+            display: flex;
+            width: fit-content;
+            /* border: 2px solid black; */
+            margin-top: 25px;
+        }
+        .main .box .down .btn a{
+            display: flex;
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+            padding: 5px 15px;
+        }
+        @media screen and (max-width:960px) {
+            .main .box{
+                width: 48%;
+            }
+        }
+        @media screen and (max-width:480px) {
+            .main .box{
+                width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="box">
+        <div class="up">
+            thumbnail
+        </div>
+        <div class="down">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi voluptatum incidunt obcaecati unde iusto omnis sed! Porro illum atque unde harum facilis optio minus amet dolorum. Minima magnam doloremque explicabo quod, similique a quam nostrum.
+            <div class="btn">
+                <a href="">view</a>
+                <a href="">edit</a>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="up">
+            thumbnail
+        </div>
+        <div class="down">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi voluptatum incidunt obcaecati unde iusto omnis sed! Porro illum atque unde harum facilis optio minus amet dolorum. Minima magnam doloremque explicabo quod, similique a quam nostrum.
+            <div class="btn">
+                <a href="">view</a>
+                <a href="">edit</a>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="up">
+            thumbnail
+        </div>
+        <div class="down">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi voluptatum incidunt obcaecati unde iusto omnis sed! Porro illum atque unde harum facilis optio minus amet dolorum. Minima magnam doloremque explicabo quod, similique a quam nostrum.
+            <div class="btn">
+                <a href="">view</a>
+                <a href="">edit</a>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="up">
+            thumbnail
+        </div>
+        <div class="down">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi voluptatum incidunt obcaecati unde iusto omnis sed! Porro illum atque unde harum facilis optio minus amet dolorum. Minima magnam doloremque explicabo quod, similique a quam nostrum.
+            <div class="btn">
+                <a href="">view</a>
+                <a href="">edit</a>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="up">
+            thumbnail
+        </div>
+        <div class="down">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi voluptatum incidunt obcaecati unde iusto omnis sed! Porro illum atque unde harum facilis optio minus amet dolorum. Minima magnam doloremque explicabo quod, similique a quam nostrum.
+            <div class="btn">
+                <a href="">view</a>
+                <a href="">edit</a>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="up">
+            thumbnail
+        </div>
+        <div class="down">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi voluptatum incidunt obcaecati unde iusto omnis sed! Porro illum atque unde harum facilis optio minus amet dolorum. Minima magnam doloremque explicabo quod, similique a quam nostrum.
+            <div class="btn">
+                <a href="">view</a>
+                <a href="">edit</a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="box"></div>
+    <div class="box"></div> -->
+</div>
+</body>
+</html>

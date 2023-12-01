@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module-2(CSS and CSS3)</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 95%;
+            margin: 0 auto;
+            background: url(https://img.freepik.com/free-vector/white-elegant-texture-background-style_23-2148432200.jpg?w=996&t=st=1700158847~exp=1700159447~hmac=7ed185d964da6916ade910217da41f4a6c1b0f27b184a33050f2a798b29c91e6);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        }
+        details{
+            /* width: 100%; */
+            margin: 25px 0px;
+            padding: 10px 25px;
+            background-color: aliceblue;
+            border: 1px solid skyblue;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        details p{
+            margin-top: 10px;
+        }
+        details summary{
+            margin: 5px 0px;
+            font-size: 22px;
+            word-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <Center>
+        <h1> Module (CSS and CSS3)-2 </h1>
+    </Center>
+     
+    <!-- Question 1-->
+    <details>
+        <summary>What are the benefits of using CSS?</summary>
+        Benefits of CSS:
+    <ul>
+        <li> CSS saves time </li>
+        <li> Pages load faster </li>
+        <li> Easy maintenance </li>
+        <li> Superior styles to HTML </li>
+        <li> Multiple Device Compatibility </li>
+        <li> Global web standards </li>
+        <li> Offline Browsing </li>
+        <li> Platform Independant </li>
+        <li> Greater consistency in design </li>
+    </ul>
+    </details>
+    
+    <!-- Question 2 -->
+    <details>
+        <summary>What are the disadvantages of CSS? </summary>
+        Disadvantages of CSS:
+    <ul>
+        <li> CSS, CSS 1 up to CSS3, result in creating of confusion among  web browsers. </li>
+        <li> With CSS, what works with one browser might not always work with another. The web developers need to test for compatibility, running the program across multiple browsers.</li>
+        <li> There exists a scarcity of security. </li>
+        <li>After making the changes we need to confirm the compatibility if they appear. The similar change affects on all the browsers.</li>
+        <li>Browser compatibility (some styles sheet are supported and some are not).</li>
+        <li> CSS works differently on different browsers. IE and Opera supports CSS as different logic. </li>
+        <li> There might be cross-browser issues while using CSS. </li>
+    </ul>
+    </details>
+   
+    <!-- Question 3 -->
+    <details>
+        <summary>What is the difference between CSS2 and CSS3?</summary>
+        <br>
+        <table border="1" cellspacing="0" cellpadding="5" width="600px">
+            <tr bgcolor="lightgray">
+                <th> CSS2 </th>
+                <th> CSS3 </th>
+            </tr>
+            <tr>
+                <td> It splits up different sections of the code into modules.</td>
+                <td> Both HTML and CSS were put into a single file, there are no concept of modules before.</td>
+            </tr>
+        <tr>
+            <td> It does not support responsive design and cannot handle media query. </td>
+            <td> It supports responsive design and can handle media query quite well. </td>
+        </tr>
+        <tr>
+            <td> It does not support 3D transformations and animations. </td>
+            <td> It supports 3D transform, transition and animations. </td>
+        </tr>
+        <tr>
+            <td> It offers standard and old colors only. </td>
+            <td> It supports RGBA, HSL,HSLA and gradient colors. </td>
+        </tr>
+        <tr>
+            <td> Its codes are supported by all types of browsers. </td>
+            <td> It gains support from all new browsers. </td>
+        </tr>
+        <tr>
+            <td> animations were coded via JQuery andJavaScript. There are nodesign layer features. Textshading/ shadowing andother special effects arenot possible as pageelements.</td>
+            <td> Text shadows can beadded with CSS3 andallows for easier readingcapabilities. Visual effectsfor braking longer wordsand lines is also possiblealong with advancedfeatures for font setting.</td>
+        </tr>
+        <tr>
+            <td> It does not support border-box property. </td>
+            <td> It supports border-box property.</td>
+        </tr>
+        <tr>
+            <td> Using CSS2, web safe fonts can be used. </td>
+            <td> With CSS3, special fonts can be used such as google fonts and typecast. </td>
+        </tr>
+        </table>
+        
+    </details>
+        
+    <!-- Question 4-->
+    <details>
+        <summary>Name a few CSS style components.</summary>
+        There are 3 style components:
+        <ol>
+            <li> Selectors: Classname, id name, element name and universal(*) </li>
+            <li> Property: These are human-readable identifiers that indicate which stylistic features you want to modify. For example, font-size , width , background-color .color, border, etc.</li>
+            <li> Value of property: Each property is assigned value. This value indicates how to style the property. </li>
+        </ol>
+    </details>
+   
+    <!-- Question 5-->
+   <details>
+    <summary>What do you understand by CSS opacity?</summary>
+    <p> The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency. </p>
+   </details> 
+
+
+    <!-- Question 6-->
+   <details>
+    <summary>How can the background color of an element be changed?</summary>
+    <p> We can change the background color by giving the background-color property. There are 6 types of color we can give.<br> color name , hexacode, rgb, rgba, hsl and hsla. </p>
+   </details>
+    
+
+    <!-- Question 7-->
+    <details>
+        <summary>How can image repetition of the backup be controlled?</summary>
+        <p> We can control the image repetation of the backup by giving the background-repeat property with no-repeat value.</p>
+    </details>
+    
+    <!-- Question 8 -->
+    <details>
+        <summary>What is the use of the background-position property?</summary>
+        <p> The background-position property sets the starting position of a background image. By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally. Another background position values are top-center, top-right, center-left, center-center, center-right, bottom-left, bottom-center and bottom-right.</p>
+    </details>
+
+    <!-- Question 9-->
+    <details>
+        <summary> Which property controls the image scroll in the background?</summary>
+        <p> The background attachment property controls the image scroll in the background by giving the 'fixed' value.</p>
+    </details>
+    
+    <!-- Question 10-->
+    <details>
+        <summary>Why should background and color be used as separate properties?</summary>
+        <p> There are two reasons behind this: It enhances the legibility of style sheets. The background property is a complex property in CSS, and if it is combined with color, the complexity will further increase. </p>
+    </details>
+    
+    <!-- Question 11 -->
+    <details>
+        <summary>How to center block elements using CSS1?</summary>
+        <p> we can align block element to center using "margin: 0 auto;" property in css. Where '0' indicates top-bottom margin and auto indicates left-right margin.  </p>
+    </details>
+    
+    <!-- Quetion 12 -->
+    <details>
+        <summary>How to maintain the CSS specifications? </summary>
+        <ul>
+            <li> <strong>Media Queries </strong>
+             <p> Media Queries is an enhancement of the @media rules of CSS and the “media” attribute in HTML. It adds parameters such as size of display, color depth and aspect ratio. This is because within a class of media (such as TV sets) there can still be important variations. It is related to the work on CC/PP, but is a much more light-weight and limited solution.</p>    
+            </li>
+            <li><strong> Selectors </strong>
+             <p> Selectors describes the element selectors used in CSS and some other technologies. Selectors are used to select elements in an HTML or XML document, in order to attach (style) properties to them. Elements can be selected based on their name, attributes, context, and other aspects.</p>
+            </li>
+            <li> <strong> Grid template layouts </strong>
+             <p> Grid Template Layout (formerly: Advanced Layout) describes a new way to position elements using constraints on their alignment to each other and on their flexibility. Document elements are flowed into one or more templates, which resemble a traditional layout grid, with rows and columns as in a table. It can be applied to a page or to individual elements, e.g., to lay out a form. This module and Grid Layout are in the process of being merged.</p>
+            </li>
+            <li> <strong> Background and borders </strong>
+              <p> Backgrounds and Borders describes background colors and images and the style of borders. New functionality includes the ability to stretch the background image, to use images for the borders, to round the corners of the box and to add a box shadow outside the border. </p>
+            </li>
+            <li> <strong> Basic box model </strong>
+             <p> The Box Model describes the layout of block-level content in normal flow. When documents are laid out on visual media (e.g. screen or paper), CSS represents the elements of the document as rectangular boxes that are laid out one after the other or nested inside each other in an ordering that is called a flow. The flow can be horizontal (typical for most languages) or vertical. </p>    
+            </li>
+            <li> <strong> Cascading and inheritance </strong>
+             <p> Cascading and Inheritance describes how values are assigned to properties. CSS allows several style sheets to influence the rendering of a document, and the process of combining these style sheets is called ‘cascading.’ If no value can be found through cascading, a value can be inherited from the parent element or the property's initial value is used. Also, the module describes how ‘specified values,’ which is what a style sheet contains, are processed into ‘computed values’ and ‘actual values.’</p>   
+            </li>
+            <li> <strong> Color </strong>
+            <p> Color specifies the color-related aspects of CSS, including transparency and the various notations for the &lt; color &gt; value type. It defines various color notations, including RGB, HSL, hexadecimal, named colors, HWB, Lab, LCH and relative colors ('color-mod'). It defines the 'color' and 'opacity' properties. And it provides ways to work in color spaces other than the default sRGB.</p> 
+            </li>
+            <li> <strong> Fonts </strong>
+             <p> Fonts contains the properties to select fonts, as well as properties for font ‘adjustments,’ such as glyph variants (e.g., swash letters, small caps, oldstyle digits), and kerning. Font selection is identical to the similar section in CSS2. The font adjustment properties are new to level 3. The module also contains the @font-face rule for downloadable fonts, which was previously in a separate module. </p>
+            </li>
+            <li> <strong> Hyperlink presentation </strong>
+             <p> Hyperlinks Presentation deals with the various ways hyperlinks can be presented. CSS1 already provided the ':visited' and ':link' pseudo-classes to select hyperlinks. This module will provide properties to control which hyperlinks are active and where the target is shown when the user traverses the link (e.g., in a new window or in-line in the current document). Note that not all links have to be presented as hyperlinks; some may be handled as replaced elements (see the Generated and replaced content module) and some are outside the scope of CSS (such as links to scripts, namespace definitions, P3P policies, etc.)</p>
+            </li>
+            <li> <strong> Position layout </strong>
+             <p> CSS Positioned Layout defines one of several ways in CSS to layout parts of a document. It contains properties to position an element at a fixed position relative to other positioned elements, to offset elements from their normal position, and to position them at a fixed position on a page. A 'z-index' property defines whether elements are in front of or behind other elements at the same position. </p>
+            </li>
+        </ul>
+    </details>
+    
+    <!-- Question 13 -->
+    <details>
+        <summary>What are the ways to integrate CSS as a web page?</summary>
+        <p> There are 3 ways to integrate css as a web page: </p>
+    <ol>
+        <li> Inline CSS:- In this type we can apply CSS in HTML element. </li>
+        <li> Internal CSS:- In this type we can apply CSS in head section using 'style' tag </li>
+        <li> External CSS: In this type we can apply CSS as a separate file from HTML with .css extention. We have to give that eaxternal CSS file link in HTML file in head section. </li>
+    </ol>
+    </details>
+    
+    <!-- Question 14 -->
+    <details>
+        <summary> What is embedded style sheets?</summary>
+        <p>  It allows you to define styles for a particular HTML document as a whole in one place. This is done by embedding the &lt; style &gt; &lt; /style &gt;  tags containing the CSS properties in the head of your document.</p>
+    </details>
+    
+    <!-- Question 15 -->
+    <details>
+        <summary>What are the external style sheets?</summary>
+        <p> To apply a rule to multiple pages, an external style sheet is used. An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage. Multiple webpages can use the same link to access the stylesheet. </p>
+    </details>
+    
+     <!-- Question 16 -->
+     <details>
+        <summary>What are the advantages and disadvantages of using external style sheets? </summary>
+        Advantages: 
+     <ul>
+        <li> It can be created once and rules applied to multiple web pages. </li>
+        <li> Should you need to make widespread changes to your site design, you can make a single changes in the stylesheet and it will be applied to all linked pages. </li>
+        <li> Saving time and efforts.</li>
+     </ul>
+    
+     Disadvantages:
+     <ul>
+        <li> In order to import style information for each document, an extra download is needed. </li>
+        <li> Until the external style sheet is loaded, it may not be possible to render the document. </li>
+        <li> For small number of style definition, it is not viable. </li>
+     </ul>
+    
+     </details>
+     
+     <!-- Question 17 -->
+     <details>
+        <summary> What is the meaning of the CSS selector? </summary>
+        <p> CSS selectors are used to "find" (or select) the HTML elements you want to style. We can divide CSS selectors into six categories: name, id, class, universal, psuedo class selector and psuedo element selector.</p>
+     </details>
+    
+     <!-- Question 18 -->
+     <details>
+        <summary> What are the media types allowed by CSS? </summary>
+        These are the media types allowed by css:
+     <ul>
+        <li> <Strong> all </Strong>
+          <p> Suitable for all devices </p>
+        </li>
+        <li> <strong> print </strong>
+         <p> 
+            Intended for paged material and for documents viewed on screen in print preview mode. Please consult the section on paged media for information about formatting issues that are specific to paged media.</p>
+        </li>
+        <li> <strong> screen </strong>
+         <p> Used for computer screens, tablets, smart-phones etc.</p>
+        </li>
+        <li> <strong> tv </strong>
+         <p> Intended for television-type devices (low resolution, color, limited-scrollability screens, sound available). </p>
+        </li>
+        <li> <strong> projection </strong>
+         <p> Intended for projected presentations, for example projectors.</p>
+        </li>
+        <li> <strong> speech </strong>
+        <p> Used for screenreaders that "reads" the page out loud</p>
+        </li>
+     </ul>
+     </details>
+    
+     <!-- Question 19 -->
+     <details>
+        <summary>What is the rule set?</summary>
+        <p> A CSS rule set contains one or more selectors and one or more declarations. The selector(s), which in this example is h1, points to an HTML element. The declaration(s), which in this example are color: blue and text-align: center style the element with a property and value. The rule set is the main building block of a CSS sheet.</p>
+     </details> 
+</body>
+</html>
